@@ -1,5 +1,9 @@
 public class Calculator {
-    public int plus(int a, int b) {
-        return a + b;
+    public int plus(int[] array) {
+        int sum = 0;
+        for (int i = 0; i < array.length; i++) {
+            sum = sum + array[i];
+        }
+        return sum;
     }
 }
